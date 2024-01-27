@@ -1,4 +1,3 @@
-#!/bin/bash
 #
 # TOBE ADDED --> Licence & Copyright Disclaimer
 #
