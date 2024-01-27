@@ -14,13 +14,13 @@ rm -rf ~/.zshrc-utils
 rm -rf ~/.zshrc
 
 cp ${LEGO_REPO_HOME_DIR}/.zshrc/zshrc ~/.zshrc
-cp ${LEGO_REPO_HOME_DIR}/.zshrc/zshrc/utils ~/.zshrc-utils
+cp -r ${LEGO_REPO_HOME_DIR}/.zshrc/utils "${HOME}/.zshrc-utils"
 
 _echoInfoSeparator
 
 cat ~/.zshrc
 
-ls -la ~/.zshrc
+ls -la ~/.zshrc-utils
 
 _echoInfoSeparator
 _echoInfo "# Reloading ~/.zshrc file"

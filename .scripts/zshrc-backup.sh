@@ -13,8 +13,8 @@ _echoInfo "# "
 rm -rf ${LEGO_REPO_HOME_DIR}/.zshrc/zshrc/utils
 rm -rf ${LEGO_REPO_HOME_DIR}/.zshrc/zshrc
 
-cp ~/.zshrc ${LEGO_REPO_HOME_DIR}/.zshrc/zshrc
-cp ~/.zshrc/utils ${LEGO_REPO_HOME_DIR}/.zshrc/utils
+cp "${HOME}/.zshrc" ${LEGO_REPO_HOME_DIR}/.zshrc/zshrc
+cp -r "${HOME}/.zshrc-utils/" ${LEGO_REPO_HOME_DIR}/.zshrc/utils
 
 _echoInfoSeparator
 cat "${LEGO_REPO_HOME_DIR}/.zshrc/zshrc"

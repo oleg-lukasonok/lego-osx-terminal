@@ -1,63 +1,14 @@
-. ./utils/-utils-go-2-project.sh
+#
+#
+. "${HOME}/.zshrc-utils/-loggers.sh"
+. "${HOME}/.zshrc-utils/-utils-alias.sh"
+. "${HOME}/.zshrc-utils/-utils-go-2.sh"
+. "${HOME}/.zshrc-utils/-utils-sleep.sh"
+. "${HOME}/.zshrc-utils/-utils-java.sh"
+. "${HOME}/.zshrc-utils/-utils-zsh-completions.sh"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-
-alias yr="yarn run"
-alias npr="npm run"
-alias kube="kubectl"
-alias go2coh="cd /Users/lego/projects/aca/projects/coh/git"
-alias go2vba="cd /Users/lego/projects/aca/projects/vba/git"
-alias go2ca="cd /Users/lego/projects/cognitive-architect/app"
-alias go2aiap="cd /Users/lego/projects/aiap/git"
-alias go2aiasb="cd /Users/lego/projects/aiasb/git"
-alias go2dou="cd /Users/lego/projects/dou-app/git"
-alias go2ilc="cd /Users/lego/projects/ilc-workday-check/git"
-alias go2roche="cd /Users/lego/projects/roche/git"
-alias go2roche-ni="cd /Users/lego/projects/roche-ni/git"
-alias go2roche-na="cd /Users/lego/projects/roche-na/git"
-alias go2cicbaltic="cd /Users/lego/projects/cicbaltic/git"
-
-jdk() {
-  version=$1
-  unset JAVA_HOME
-  export JAVA_HOME=$(/usr/libexec/java_home -v"$version")
-  java -version
-}
-
-setJavaZulu11() {
-  unset JAVA_HOME
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
-  java -version
-}
-
-sleep5s() {
-  echo "#########################################################"
-  echo "#### Sleep for 5 seconds "
-  echo "#########################################################"
-  sleep 5
-}
-
-sleep10s() {
-  echo "#########################################################"
-  echo "#### Sleep for 10 seconds "
-  echo "#########################################################"
-  sleep 5
-}
-
-### START --> zsh-completions
-
-chmod go-w '/usr/local/share'
-chmod -R go-w '/usr/local/share/zsh'
-
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
-  autoload -Uz compinit
-  compinit
-fi
-
-### END --> zsh-completions
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/lego/.rd/bin:$PATH"

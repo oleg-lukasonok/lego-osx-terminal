@@ -1,9 +1,9 @@
 #!/bin/bash
 #
-# TOBE ADDED
-# - Licence & Copyright Disclaimer
+# TOBE ADDED --> Licence & Copyright Disclaimer
 #
-go2project() {
+
+go2() {
   TMP_ARGS=("$@")
 
   TMP_PROJECT=""
