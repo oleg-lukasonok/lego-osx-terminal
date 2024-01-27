@@ -1,11 +1,13 @@
 #
 #
+. "${HOME}/.zshrc-utils/-utils-zsh-completions.sh"
+. "${HOME}/.zshrc-utils/-utils-zsh-plugins.sh"
+
 . "${HOME}/.zshrc-utils/-loggers.sh"
 . "${HOME}/.zshrc-utils/-utils-alias.sh"
 . "${HOME}/.zshrc-utils/-utils-go-2.sh"
 . "${HOME}/.zshrc-utils/-utils-sleep.sh"
 . "${HOME}/.zshrc-utils/-utils-java.sh"
-. "${HOME}/.zshrc-utils/-utils-zsh-completions.sh"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
