@@ -1,7 +1,7 @@
+. ./utils/-utils-go-2-project.sh
+
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-
-eval $(minikube docker-env)
 
 alias yr="yarn run"
 alias npr="npm run"
@@ -46,13 +46,17 @@ sleep10s() {
 }
 
 ### START --> zsh-completions
+
 chmod go-w '/usr/local/share'
 chmod -R go-w '/usr/local/share/zsh'
+
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
   autoload -Uz compinit
   compinit
 fi
+
 ### END --> zsh-completions
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
