@@ -1,0 +1,11 @@
+{
+  "name": "lego-osx-terminal",
+  "version": "0.0.1",
+  "description": "Following package dedicate for purpose of structural and fast setup of local development environment. ",
+  "repository": "https://github.com/oleg-lukasonok/lego-osx-terminal.git",
+  "author": "lego <oleg.lukasonok@lt.ibm.com>",
+  "license": "MIT",
+  "private": false,
+  "main": "src/index.js",
+  "dependencies": {}
+}
