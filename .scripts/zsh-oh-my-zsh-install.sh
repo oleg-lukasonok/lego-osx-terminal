@@ -9,4 +9,5 @@ _echoInfoSeparator
 _echoInfo "# Installing oh-my-zsh"
 _echoInfo "# "
 _echoInfo "# "
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

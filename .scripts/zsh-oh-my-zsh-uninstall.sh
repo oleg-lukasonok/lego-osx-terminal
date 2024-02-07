@@ -9,4 +9,5 @@ _echoInfoSeparator
 _echoInfo "# Uninstalling oh-my-zsh"
 _echoInfo "# "
 _echoInfo "# "
+
 uninstall_oh_my_zsh
