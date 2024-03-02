@@ -16,7 +16,7 @@ _loggers_infoX() {
     echo -e "\033[1;36m${TMP_LINE}\033[0m" >&2
 }
 
-_loggers_infoXYellow() {
+_loggers_warnX() {
     _loggers_enableTrailingNewLine
 
     local TMP_1ST_PARAM="${1}${LOCAL_STRING_050_SPACES}"

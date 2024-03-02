@@ -22,7 +22,7 @@ _echoInfo() {
   echo -e "\033[1;36m$1\033[0m" >&2
 }
 
-_echoInfoX() {
+_loggers_infoX() {
   _enableLoggerTrailingNewLine
 
   local TMP_1ST_PARAM="${1}${LOCAL_STRING_050_SPACES}"
@@ -37,7 +37,7 @@ _echoInfoYellow() {
   echo -e "\033[1;33m$1\033[0m" >&2
 }
 
-_echoInfoXYellow() {
+_loggers_warnX() {
   _enableLoggerTrailingNewLine
 
   local TMP_1ST_PARAM="${1}${LOCAL_STRING_050_SPACES}"
@@ -47,9 +47,9 @@ _echoInfoXYellow() {
   echo -e "\033[1;33m${TMP_LINE}\033[0m" >&2
 }
 
-_echoInfoXSeparator() {
+_loggers_infoXSeparator() {
   _enableLoggerTrailingNewLine
-  _echoInfoX "$1" "---------------------------------------------------------"
+  _loggers_infoX "$1" "---------------------------------------------------------"
 }
 
 _echoInfoSeparator() {
@@ -67,7 +67,7 @@ _echoError() {
   echo -e "\033[1;31m$1\033[0m" >&2
 }
 
-_echoErrorX() {
+_loggers_errorX() {
   _enableLoggerTrailingNewLine
 
   local TMP_1ST_PARAM="${1}${LOCAL_STRING_050_SPACES}"

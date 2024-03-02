@@ -21,9 +21,9 @@ _echoInfoSeparator() {
     _echoInfo "# ---------------------------------------------------------"
 }
 
-_echoInfoXSeparator() {
+_loggers_infoXSeparator() {
     _enableLoggerTrailingNewLine
-    _echoInfoX "$1" "---------------------------------------------------------"
+    _loggers_infoX "$1" "---------------------------------------------------------"
 }
 
 _echoInfoYellowSeparator() {
@@ -36,7 +36,7 @@ _echoError() {
     echo -e "\033[1;31m$1\033[0m" >&2
 }
 
-_echoErrorX() {
+_loggers_errorX() {
     _enableLoggerTrailingNewLine
 
     local TMP_1ST_PARAM="${1}${LOCAL_STRING_050_SPACES}"
