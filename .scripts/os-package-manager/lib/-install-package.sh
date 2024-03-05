@@ -4,12 +4,17 @@
 #     TOBE ADDED - Licence & Copyright Disclaimer
 #
 # -------------------------------------------------------------------------------------
+. ./.scripts/utils/-loggers.sh
 
-_loggers_enableLoggerTrailingNewLine() {
-  if
-    [ -z "$NI_LOGGER_TRAILING_NEW_LINE_DISABLED" ]
-  then
-    echo "" >&2
-    export NI_LOGGER_TRAILING_NEW_LINE_DISABLED="TRUE"
-  fi
+. ./.scripts/utils/-utils-env-vars-reader.sh
+
+_echoInfoSeparator
+_echoInfo "# Installing curl"
+_echoInfo "# "
+_echoInfo "# "
+
+brew install curl
+
+_brew_installPackage() {
+
 }
