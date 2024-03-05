@@ -13,5 +13,5 @@ _copier_package_install() {
     local FUNCTION_NAME="_copier_package_install"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_execPackageInstall "copier"
+    _osManager_packageInstall "copier"
 }

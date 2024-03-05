@@ -5,6 +5,13 @@
 #
 # -------------------------------------------------------------------------------------
 
+. ./.scripts/loggers/lib/--index-api.sh
+
 . ./.scripts/os-manager/lib/--index.sh
 
-_osManager_execPackageInstall
+_minikube_package_install() {
+    local FUNCTION_NAME="_minikube_package_install"
+    _loggers_info "${FUNCTION_NAME}"
+
+    _osManager_packageInstall "minikube"
+}

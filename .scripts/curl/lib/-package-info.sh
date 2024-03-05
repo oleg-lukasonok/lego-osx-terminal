@@ -13,5 +13,5 @@ _curl_package_info() {
     local FUNCTION_NAME="_curl_package_info"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_viewPackageInfo "curl"
+    _osManager_packageInfo "curl"
 }

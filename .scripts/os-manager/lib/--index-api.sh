@@ -5,9 +5,12 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/os-manager/lib/-exec-package-install.sh
-. ./.scripts/os-manager/lib/-exec-package-uninstall.sh
+. ./.scripts/os-manager/lib/-package-cask-info.sh
+. ./.scripts/os-manager/lib/-package-cask-install.sh
+. ./.scripts/os-manager/lib/-package-cask-uninstall.sh
+
+. ./.scripts/os-manager/lib/-package-info.sh
+. ./.scripts/os-manager/lib/-package-install.sh
+. ./.scripts/os-manager/lib/-package-uninstall.sh
 
 . ./.scripts/os-manager/lib/-is-package-installed.sh
-
-. ./.scripts/os-manager/lib/-view-package-info.sh

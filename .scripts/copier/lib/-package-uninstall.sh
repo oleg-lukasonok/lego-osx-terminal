@@ -13,5 +13,5 @@ _copier_package_uninstall() {
     local FUNCTION_NAME="_copier_package_uninstall"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_execPackageUninstall "copier"
+    _osManager_packageUninstall "copier"
 }

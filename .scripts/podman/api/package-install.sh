@@ -5,6 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/os-manager/lib/--index.sh
+. ./.scripts/podman/lib/--index.sh
 
-_osManager_execPackageUnInstall
+_podman_package_install

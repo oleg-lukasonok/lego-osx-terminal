@@ -9,8 +9,8 @@
 
 . ./.scripts/os-manager/lib/-is-package-installed.sh
 
-_osManager_execPackageInstall() {
-    local FUNCTION_NAME="_osManager_execPackageInstall"
+_osManager_packageCaskInstall() {
+    local FUNCTION_NAME="_osManager_packageCaskInstall"
     _loggers_debug "${FUNCTION_NAME}"
 
     local TMP_OS_PACKAGE="${OS_PACKAGE}"
@@ -28,7 +28,7 @@ _osManager_execPackageInstall() {
         [ "${IS_INSTALLED}" = false ]
     then
         _loggers_emptyLine
-        brew install "${TMP_OS_PACKAGE}"
+        brew install --cask "${TMP_OS_PACKAGE}"
         _loggers_emptyLine
     else
         _loggers_warn "${FUNCTION_NAME}"

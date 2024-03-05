@@ -7,13 +7,13 @@
 #
 #       --> passed parameters are read & exported environment variables
 #
-. ./.scripts/warp/lib/--env-vars-reader.sh
+. ./.scripts/podman/lib/--env-vars-reader.sh
 #
 #       --> required environment variables are validated for existance
 #
-. ./.scripts/warp/lib/--env-vars-validator.sh
+. ./.scripts/podman/lib/--env-vars-validator.sh
 #
 #       --> available functions are imported/exported
 #
-. ./.scripts/warp/lib/--index-api.sh
+. ./.scripts/podman/lib/--index-api.sh
 # -------------------------------------------------------------------------------------

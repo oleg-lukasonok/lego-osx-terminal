@@ -1,13 +1,10 @@
+#!/bin/bash
+# -------------------------------------------------------------------------------------
 #
-# TOBE ADDED --> Licence & Copyright Disclaimer
+#     TOBE ADDED - Licence & Copyright Disclaimer
 #
-. ./.scripts/utils/-loggers.sh
+# -------------------------------------------------------------------------------------
 
-. ./.scripts/utils/-utils-env-vars-reader.sh
-
-_echoInfoSeparator
-_echoInfo "# Installing curl"
-_echoInfo "# "
-_echoInfo "# "
-
-brew install curl
+. ./.scripts/warp/lib/-package-info.sh
+. ./.scripts/warp/lib/-package-install.sh
+. ./.scripts/warp/lib/-package-uninstall.sh

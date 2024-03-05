@@ -5,13 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/loggers/lib/--index-api.sh
+. ./.scripts/warp/lib/--index.sh
 
-. ./.scripts/os-manager/lib/--index.sh
-
-_openssl_package_info() {
-    local FUNCTION_NAME="_openssl_package_info"
-    _loggers_info "${FUNCTION_NAME}"
-
-    _osManager_packageInfo "openssl"
-}
+_warp_package_info

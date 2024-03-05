@@ -9,8 +9,8 @@
 
 . ./.scripts/os-manager/lib/-is-package-installed.sh
 
-_osManager_viewPackageInfo() {
-    local FUNCTION_NAME="_osManager_viewPackageInfo"
+_osManager_packageUninstall() {
+    local FUNCTION_NAME="_osManager_packageUninstall"
     _loggers_debug "${FUNCTION_NAME}"
 
     local TMP_OS_PACKAGE="${OS_PACKAGE}"
@@ -23,16 +23,15 @@ _osManager_viewPackageInfo() {
     local IS_INSTALLED=$(
         _osManager_isPackageInstalled "${TMP_OS_PACKAGE}"
     )
-
     if
         [ "${IS_INSTALLED}" = true ]
     then
         _loggers_emptyLine
-        brew info "${TMP_OS_PACKAGE}"
+        brew uninstall "${TMP_OS_PACKAGE}"
         _loggers_emptyLine
     else
         _loggers_warn "${FUNCTION_NAME}"
-        _loggers_warn "${FUNCTION_NAME}" "Package is not installed!"
+        _loggers_warn "${FUNCTION_NAME}" "Skiping package ${TMP_OS_PACKAGE} uninstallation - it is already uninstalled!"
         _loggers_warn "${FUNCTION_NAME}"
     fi
 }

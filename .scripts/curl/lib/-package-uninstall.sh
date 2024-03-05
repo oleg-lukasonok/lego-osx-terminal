@@ -13,5 +13,5 @@ _curl_package_uninstall() {
     local FUNCTION_NAME="_curl_package_uninstall"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_execPackageUninstall "curl"
+    _osManager_packageUninstall "curl"
 }

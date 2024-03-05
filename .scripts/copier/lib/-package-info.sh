@@ -13,5 +13,5 @@ _copier_package_info() {
     local FUNCTION_NAME="_copier_package_info"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_viewPackageInfo "copier"
+    _osManager_packageInfo "copier"
 }

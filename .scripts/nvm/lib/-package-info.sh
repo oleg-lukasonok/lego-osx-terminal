@@ -13,5 +13,5 @@ _nvm_package_info() {
     local FUNCTION_NAME="_nvm_package_info"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_viewPackageInfo "nvm"
+    _osManager_packageInfo "nvm"
 }
