@@ -7,11 +7,12 @@
 
 . ./.scripts/loggers/lib/--index-api.sh
 
-. ./.scripts/os-manager/lib/--index.sh
+. ./.scripts/nvm/lib/--index.sh
 
-_copier_info() {
-    local FUNCTION_NAME="_copier_info"
+_nvm_node_package_info() {
+    local FUNCTION_NAME="_nvm_node_package_info"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_viewPackageInfo "copier"
+    _loggers_error "${FUNCTION_NAME}" "Missing implementation!"
+    exit 1
 }

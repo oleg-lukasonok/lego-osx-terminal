@@ -5,6 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/nvm/lib/--index.sh
-
-_nvm_info
+. ./.scripts/nvm-node/lib/-package-info.sh
+. ./.scripts/nvm-node/lib/-package-install.sh
+. ./.scripts/nvm-node/lib/-package-uninstall.sh

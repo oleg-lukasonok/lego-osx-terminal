@@ -5,6 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/nvm/lib/-package-info.sh
-. ./.scripts/nvm/lib/-package-install.sh
-. ./.scripts/nvm/lib/-package-uninstall.sh
+. ./.scripts/curl/lib/--index.sh
+
+_curl_package_uninstall

@@ -5,13 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/loggers/lib/--index-api.sh
+. ./.scripts/curl/lib/--index.sh
 
-. ./.scripts/os-manager/lib/--index.sh
-
-_nvm_uninstall() {
-    local FUNCTION_NAME="_nvm_uninstall"
-    _loggers_info "${FUNCTION_NAME}"
-
-    _osManager_execPackageUninstall "nvm"
-}
+_curl_package_info

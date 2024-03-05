@@ -5,13 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/loggers/lib/--index-api.sh
+. ./.scripts/nvm/lib/--index.sh
 
-. ./.scripts/os-manager/lib/--index.sh
-
-_copier_uninstall() {
-    local FUNCTION_NAME="_copier_uninstall"
-    _loggers_info "${FUNCTION_NAME}"
-
-    _osManager_execPackageUninstall "copier"
-}
+_nvm_package_install

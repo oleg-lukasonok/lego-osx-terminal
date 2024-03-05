@@ -5,6 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/curl/lib/--index.sh
+. ./.scripts/nvm-node/lib/--index.sh
 
-_curl_info
+_nvm_node_package_install

@@ -5,6 +5,13 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/copier/lib/--index.sh
+. ./.scripts/loggers/lib/--index-api.sh
 
-_copier_uninstall
+. ./.scripts/nvm/lib/--index.sh
+
+_nvm_node_package_install() {
+    local FUNCTION_NAME="_nvm_node_package_install"
+    _loggers_info "${FUNCTION_NAME}"
+
+    nvm install --lts
+}

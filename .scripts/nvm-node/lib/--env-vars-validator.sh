@@ -5,6 +5,4 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/nvm/lib/-package-info.sh
-. ./.scripts/nvm/lib/-package-install.sh
-. ./.scripts/nvm/lib/-package-uninstall.sh
+. ./.scripts/nvm/lib/--env-vars-validator.sh

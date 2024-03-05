@@ -5,6 +5,13 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/nvm/lib/-package-info.sh
-. ./.scripts/nvm/lib/-package-install.sh
-. ./.scripts/nvm/lib/-package-uninstall.sh
+. ./.scripts/loggers/lib/--index-api.sh
+
+. ./.scripts/os-manager/lib/--index.sh
+
+_curl_package_uninstall() {
+    local FUNCTION_NAME="_curl_package_uninstall"
+    _loggers_info "${FUNCTION_NAME}"
+
+    _osManager_execPackageUninstall "curl"
+}

@@ -5,6 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/copier/lib/-info.sh
-. ./.scripts/copier/lib/-install.sh
-. ./.scripts/copier/lib/-uninstall.sh
+. ./.scripts/copier/lib/-package-info.sh
+. ./.scripts/copier/lib/-package-install.sh
+. ./.scripts/copier/lib/-package-uninstall.sh

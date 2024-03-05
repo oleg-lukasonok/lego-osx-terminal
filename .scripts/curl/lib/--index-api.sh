@@ -5,6 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/curl/lib/-info.sh
-. ./.scripts/curl/lib/-install.sh
-. ./.scripts/curl/lib/-uninstall.sh
+. ./.scripts/curl/lib/-package-info.sh
+. ./.scripts/curl/lib/-package-install.sh
+. ./.scripts/curl/lib/-package-uninstall.sh

@@ -9,9 +9,9 @@
 
 . ./.scripts/os-manager/lib/--index.sh
 
-_curl_install() {
-    local FUNCTION_NAME="_curl_install"
+_nvm_package_install() {
+    local FUNCTION_NAME="_nvm_package_install"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_execPackageInstall "curl"
+    _osManager_execPackageInstall "nvm"
 }

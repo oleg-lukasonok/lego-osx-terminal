@@ -5,13 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/loggers/lib/--index-api.sh
+. ./.scripts/copier/lib/--index.sh
 
-. ./.scripts/os-manager/lib/--index.sh
-
-_curl_info() {
-    local FUNCTION_NAME="_curl_info"
-    _loggers_info "${FUNCTION_NAME}"
-
-    _osManager_viewPackageInfo "curl"
-}
+_copier_package_install
