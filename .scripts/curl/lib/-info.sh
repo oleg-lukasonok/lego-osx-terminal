@@ -5,6 +5,13 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/curl/lib/--index.sh
+. ./.scripts/loggers/lib/--index-api.sh
 
-_curl_info
+. ./.scripts/os-manager/lib/--index.sh
+
+_curl_info() {
+    local FUNCTION_NAME="_curl_info"
+    _loggers_info "${FUNCTION_NAME}"
+
+    _osManager_viewPackageInfo "curl"
+}

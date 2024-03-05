@@ -1,13 +1,17 @@
+#!/bin/bash
+# -------------------------------------------------------------------------------------
 #
-# TOBE ADDED --> Licence & Copyright Disclaimer
+#     TOBE ADDED - Licence & Copyright Disclaimer
 #
-. ./.scripts/utils/-loggers.sh
+# -------------------------------------------------------------------------------------
 
-. ./.scripts/utils/-utils-env-vars-reader.sh
+. ./.scripts/loggers/lib/--index-api.sh
 
-_echoInfoSeparator
-_echoInfo "# Uninstalling curl"
-_echoInfo "# "
-_echoInfo "# "
+. ./.scripts/os-manager/lib/--index.sh
 
-brew uninstall curl
+_curl_uninstall() {
+    local FUNCTION_NAME="_curl_uninstall"
+    _loggers_info "${FUNCTION_NAME}"
+
+    _osManager_execPackageUninstall "curl"
+}

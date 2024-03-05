@@ -7,4 +7,4 @@
 
 . ./.scripts/curl/lib/--index.sh
 
-_curl_info
+_curl_uninstall

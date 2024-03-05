@@ -7,11 +7,12 @@
 
 . ./.scripts/loggers/lib/--index-api.sh
 
-. ./.scripts/os-manager/lib/--index.sh
-
-_curl_install() {
-    local FUNCTION_NAME="_curl_install"
+_openssl_localStorage_resetCertificatesDirectory() {
+    local FUNCTION_NAME="_openssl_localStorage_resetCertificatesDirectory"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_execPackageInstall "curl"
+    _loggers_info "${FUNCTION_NAME}" "OPENSSL_CERT_DIR: ${OPENSSL_CERT_DIR}"
+
+    rm -rf "${OPENSSL_CERT_DIR}"
+    mkdir -p "${OPENSSL_CERT_DIR}"
 }

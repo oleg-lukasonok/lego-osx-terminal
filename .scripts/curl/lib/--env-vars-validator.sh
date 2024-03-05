@@ -5,6 +5,4 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/curl/lib/--index.sh
-
-_curl_info
+. ./.scripts/os-manager/lib/--env-vars-validator.sh

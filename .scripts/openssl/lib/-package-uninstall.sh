@@ -9,9 +9,9 @@
 
 . ./.scripts/os-manager/lib/--index.sh
 
-_curl_install() {
-    local FUNCTION_NAME="_curl_install"
+_openssl_package_uninstall() {
+    local FUNCTION_NAME="_openssl_package_uninstall"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_execPackageInstall "curl"
+    _osManager_execPackageUninstall "openssl"
 }

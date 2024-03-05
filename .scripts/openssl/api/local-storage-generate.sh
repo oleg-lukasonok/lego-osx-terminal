@@ -5,6 +5,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/curl/lib/--index.sh
+. ./.scripts/openssl/lib/--index.sh
 
-_curl_info
+_openssl_localStorage_generate
