@@ -4,17 +4,14 @@
 #     TOBE ADDED - Licence & Copyright Disclaimer
 #
 # -------------------------------------------------------------------------------------
-. ./.scripts/utils/-loggers.sh
 
-. ./.scripts/utils/-utils-env-vars-reader.sh
+. ./.scripts/loggers/lib/--index-api.sh
 
-_echoInfoSeparator
-_echoInfo "# Installing curl"
-_echoInfo "# "
-_echoInfo "# "
+. ./.scripts/os-manager/lib/--index.sh
 
-brew install curl
+_copier_uninstall() {
+    local FUNCTION_NAME="_copier_uninstall"
+    _loggers_info "${FUNCTION_NAME}"
 
-_brew_installPackage() {
-
+    _osManager_execPackageUninstall "copier"
 }

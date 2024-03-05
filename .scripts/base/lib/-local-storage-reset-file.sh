@@ -9,16 +9,16 @@
 
 _base_localStorage_reset_file() {
   local FUNCTION_NAME="_base_localStorage_reset_file"
-  _loggers_infoX "${FUNCTION_NAME}"
+  _loggers_debug "${FUNCTION_NAME}"
 
   local FILE_RELATIVE_PATH="${1}"
 
   if
     [ -z "${FILE_RELATIVE_PATH}" ]
   then
-    _loggers_error
-    _loggers_errorX "${FUNCTION_NAME}" "Missing mandatory 1st paramter (FILE_RELATIVE_PATH)!"
-    _loggers_error
+    _loggers_error "${FUNCTION_NAME}"
+    _loggers_error "${FUNCTION_NAME}" "Missing mandatory 1st paramter (FILE_RELATIVE_PATH)!"
+    _loggers_error "${FUNCTION_NAME}"
     exit 1
   fi
 

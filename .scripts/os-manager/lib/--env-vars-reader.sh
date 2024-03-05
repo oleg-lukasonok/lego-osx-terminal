@@ -5,17 +5,18 @@
 #
 # -------------------------------------------------------------------------------------
 
-export REPO_HOME_DIR=$(pwd)
-export REPO_DOT_ENV_FILE=".env"
+. ./.scripts/base/lib/--env-vars-reader.sh
 
-NI_ALL_ARGS=("$@")
+export OS_PACKAGE=""
+
+LOCAL_ALL_ARGS=("$@")
 while [[ "$#" -gt 0 ]]; do
     case $1 in
-    --repo-dot-env-file)
-        export REPO_DOT_ENV_FILE="$2"
+    --os-package)
+        export OS_PACKAGE="$2"
         ;;
     *) ;;
     esac
     shift
 done
-set -- "${NI_ALL_ARGS[@]}"
+set -- "${LOCAL_ALL_ARGS[@]}"

@@ -4,13 +4,7 @@
 #     TOBE ADDED - Licence & Copyright Disclaimer
 #
 # -------------------------------------------------------------------------------------
-. ./.scripts/utils/-loggers.sh
 
-. ./.scripts/utils/-utils-env-vars-reader.sh
+. ./.scripts/os-manager/lib/--index.sh
 
-_echoInfoSeparator
-_echoInfo "# Installing curl"
-_echoInfo "# "
-_echoInfo "# "
-
-brew install curl
+_osManager_execPackageUnInstall

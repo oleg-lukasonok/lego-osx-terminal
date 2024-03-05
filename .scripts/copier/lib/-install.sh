@@ -7,15 +7,11 @@
 
 . ./.scripts/loggers/lib/--index-api.sh
 
-_base_getEnvVariableKey_fromLine() {
-  local FUNCTION_NAME="_base_getEnvVariableKey_fromLine"
-  _loggers_debug "${FUNCTION_NAME}"
+. ./.scripts/os-manager/lib/--index.sh
 
-  local TMP_LINE="${1}"
+_copier_install() {
+    local FUNCTION_NAME="_copier_install"
+    _loggers_info "${FUNCTION_NAME}"
 
-  local RET_VAL=$(
-    echo $TMP_LINE | awk -F "=" '{print $1}'
-  )
-
-  echo "${RET_VAL}"
+    _osManager_execPackageInstall "copier"
 }

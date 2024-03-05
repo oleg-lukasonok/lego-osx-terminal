@@ -16,7 +16,7 @@
 
 _base_exportEnvVariablesFrom_file() {
   local FUNCTION_NAME="_base_exportEnvVariablesFrom_file"
-  _loggers_infoX "${FUNCTION_NAME}"
+  _loggers_debug "${FUNCTION_NAME}"
 
   local FILE_RELATIVE_PATH=${1}
 

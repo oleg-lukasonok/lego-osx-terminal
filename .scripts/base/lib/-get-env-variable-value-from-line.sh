@@ -9,7 +9,7 @@
 
 _base_getEnvVariableValue_fromLine() {
   local FUNCTION_NAME="_base_getEnvVariableValue_fromLine"
-  _loggers_infoX "${FUNCTION_NAME}"
+  _loggers_debug "${FUNCTION_NAME}"
 
   local TMP_LINE="${1}"
 

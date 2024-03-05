@@ -11,7 +11,7 @@
 
 _base_localStorage_readLinesFrom_file() {
   local FUNCTION_NAME="_base_localStorage_readLinesFrom_file"
-  _loggers_infoX "${FUNCTION_NAME}"
+  _loggers_debug "${FUNCTION_NAME}"
 
   local FILE_RELATIVE_PATH="${1}"
 

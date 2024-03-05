@@ -4,7 +4,12 @@
 #     TOBE ADDED - Licence & Copyright Disclaimer
 #
 # -------------------------------------------------------------------------------------
-export NI_LOGGER_TRAILING_NEW_LINE_ENABLED="TRUE"
+export LOGGER_TRAILING_NEW_LINE_ENABLED="TRUE"
+
+export LOGGER_IS_ENABLED_INFO=true
+export LOGGER_IS_ENABLED_DEBUG=true
+export LOGGER_IS_ENABLED_WARN=true
+export LOGGER_IS_ENABLED_ERROR=true
 
 export LOCAL_STRING_005_SPACES="          "
 export LOCAL_STRING_010_SPACES="${LOCAL_STRING_005_SPACES}${LOCAL_STRING_005_SPACES}"

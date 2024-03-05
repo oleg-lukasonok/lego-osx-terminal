@@ -18,7 +18,7 @@
 
 _base_localStorage_saveEnvVariable2_file() {
   local FUNCTION_NAME="_base_localStorage_saveEnvVariable2_file"
-  _loggers_infoX "${FUNCTION_NAME}"
+  _loggers_debug "${FUNCTION_NAME}"
 
   _base_ensure_evnVarKey
   _base_ensure_evnVarValue
@@ -29,12 +29,8 @@ _base_localStorage_saveEnvVariable2_file() {
   local PARAM_ENV_VAR_KEY="${ENV_VAR_KEY}"
   local PARAM_ENV_VAR_VALUE="${ENV_VAR_VALUE}"
 
-  if
-    [ -z "$IS_SILENT_ENV_VAR_SAVE" ]
-  then
-    _loggers_infoX "${FUNCTION_NAME}" "ENV_VAR_KEY: ${ENV_VAR_KEY}"
-    _loggers_infoX "${FUNCTION_NAME}" "ENV_VAR_VALUE: ${ENV_VAR_VALUE}"
-  fi
+  _loggers_debug "${FUNCTION_NAME}" "ENV_VAR_KEY: ${ENV_VAR_KEY}"
+  _loggers_debug "${FUNCTION_NAME}" "ENV_VAR_VALUE: ${ENV_VAR_VALUE}"
 
   local FILE_LINES=$(
     _base_localStorage_readLinesFrom_file "${FILE_RELATIVE_PATH}"
