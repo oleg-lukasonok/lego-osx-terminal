@@ -7,9 +7,9 @@
 
 _loggers_enableLoggerTrailingNewLine() {
   if
-    [ -z "$NI_LOGGER_TRAILING_NEW_LINE_DISABLED" ]
+    [ -z "$LOGGER_TRAILING_NEW_LINE_DISABLED" ]
   then
     echo "" >&2
-    export NI_LOGGER_TRAILING_NEW_LINE_DISABLED="TRUE"
+    export LOGGER_TRAILING_NEW_LINE_DISABLED="TRUE"
   fi
 }

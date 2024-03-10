@@ -112,9 +112,6 @@ source $ZSH/oh-my-zsh.sh
 . "${HOME}/.zshrc-utils/-utils-sleep.sh"
 . "${HOME}/.zshrc-utils/-utils-java.sh"
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/lego/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
@@ -127,5 +124,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
+# [NVM] BELOW 3 LINES REQUIRED
 export NVM_DIR="$HOME/.nvm"
+. $(brew --prefix nvm)/nvm.sh

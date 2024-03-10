@@ -9,5 +9,5 @@
 
 _loggers_waitingDot() {
   echo -n "." >&2
-  export NI_LOGGER_TRAILING_NEW_LINE_DISABLED=""
+  export LOGGER_TRAILING_NEW_LINE_DISABLED=""
 }
