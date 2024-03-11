@@ -1,7 +1,9 @@
 #!/bin/bash
 # -------------------------------------------------------------------------------------
 #
-#     TOBE ADDED - Licence & Copyright Disclaimer
+# PLACEHOLDER_COPYRIGHT
+#
+# PLACEHOLDER_LICENCE
 #
 # -------------------------------------------------------------------------------------
 export LOGGER_TRAILING_NEW_LINE_ENABLED="TRUE"
