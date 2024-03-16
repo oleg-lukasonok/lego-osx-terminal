@@ -21,7 +21,7 @@ _base_exportEnvVarsFrom_fileDotEnv
 export ENV_VAR_KEY=""
 export ENV_VAR_VALUE=""
 
-LOCAL_ALL_ARGS=("$@")
+ALL_ARGS=("$@")
 while [[ "$#" -gt 0 ]]; do
     case $1 in
     --local-os-type)
@@ -43,4 +43,4 @@ while [[ "$#" -gt 0 ]]; do
     esac
     shift
 done
-set -- "${LOCAL_ALL_ARGS[@]}"
+set -- "${ALL_ARGS[@]}"

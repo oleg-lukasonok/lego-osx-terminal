@@ -11,7 +11,7 @@
 
 export OS_PACKAGE=""
 
-LOCAL_ALL_ARGS=("$@")
+ALL_ARGS=("$@")
 while [[ "$#" -gt 0 ]]; do
     case $1 in
     --os-package)
@@ -21,4 +21,4 @@ while [[ "$#" -gt 0 ]]; do
     esac
     shift
 done
-set -- "${LOCAL_ALL_ARGS[@]}"
+set -- "${ALL_ARGS[@]}"
